@@ -16,14 +16,14 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- <link rel="stylesheet" href="./assets/css/scroll.css" /> -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-    <link rel="stylesheet" href="./assets/css/navbarResponsive.css" />
+    <!--<link rel="stylesheet" href="./assets/css/responsive.css" />-->
+    <!--<link rel="stylesheet" href="./assets/css/navbarResponsive.css" />-->
     <!--<link rel="stylesheet" href="./assets/css/modoOscuro.css" />-->
-    <!--script JS-->
+    <!--script JS
     <script src="./assets/js/menuMobile.js" defer></script>
     <script src="./assets/js/navbarFixed.js" defer></script>
     <script src="./assets/js/modoOscuro.js" defer></script>
-
+    -->
     <title>WEB Gaming</title>
   </head>
   <body>
@@ -1745,6 +1745,59 @@
           </div>
         </section>
       </main>
+
+      <!--ASIDE BARRA LATERAL-->
+      <aside class="layout__aside">
+        <!--ASIDE SECCION DE LOGIN-->
+        <section class="aside__login">
+          <header class="login__subheader">
+            <h3 class="subheader__title">Iniciar Sesion</h3>
+          </header>
+
+          <div class="login__container">
+            <form class="login__form">
+              <div class="form__container-username">
+                <label for="username" class="form__label">Usuario</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  class="form__input"
+                />
+              </div>
+
+              <div class="form__container-password">
+                <label for="password" class="form__label">Contraseña</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="form__input"
+                />
+              </div>
+
+              <div class="form__container-remember">
+                <label for="remember" class="form__label">Recuerdame</label>
+                <input
+                  type="checkbox"
+                  name="remember"
+                  id="remember"
+                  class="form__input"
+                />
+              </div>
+
+              <input
+                type="submit"
+                class="form__submit"
+                value="Iniciar Sesion"
+              />
+            </form>
+
+            <a class="login__register" href="#">Registrate</a>
+            <a class="login__lost-pass" href="#">Recuperar Contraseña</a>
+          </div>
+        </section>
+      </aside>
 
       <!--PIE DE PAGINA-->
       <footer class="layout__footer"></footer>
