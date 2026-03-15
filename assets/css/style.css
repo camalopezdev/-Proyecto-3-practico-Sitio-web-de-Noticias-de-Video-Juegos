@@ -8,6 +8,7 @@
     --color-shadow: rgba(0, 0, 0, 0.10);
     --color-bg-marquee: #EEEEEE;
     --color-text-marquee: #7C7C7C;
+    --color-titles: #333333;
 
 }
 
@@ -485,36 +486,206 @@ color: var(--color-principal);
     height: 4rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*ESTILOS MEJORES MOMENTOS HIGHLIGHTS*/
 .layout__highlights{
     grid-area: high;
+    margin-bottom: 3rem;
 }
+
+.news__subheader,
+.games__subheader,
+.login__subheader,
+.posts__subheader,
+.recent__subheader,
+.videos__subheader,
+.highlights__subheader,
+.last-reviews__subheader{
+    width: 100%;
+    height: 3.5rem;
+    margin-bottom: 3rem;
+    background-color: var(--color-bg-navbar);
+    padding: 0.5rem;
+}
+
+.subheader__title,
+.news__title,
+.list-header__title,
+.last-reviews__link-title,
+.list-header__title{
+    display: inline;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0.5rem;
+    color: var(--color-principal);
+    background-color: var(--color-secondary);
+}
+
+.highlights__posts{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.highlights__post{
+    flex-basis: 33%;
+    height: 100%;
+    border-bottom: 1px solid var(--color-bg-marquee);
+}
+
+.highlights__image{
+    position: relative;
+    overflow: hidden;
+}
+
+.highlights__img{
+    transition: all 300ms ease;
+}
+
+.highlights__img:hover{
+    transform: scale(1.1);
+}
+
+.highlights__category{
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background-color: var(--color-secondary);
+    transition: all 300ms;
+}
+
+.highlights__category:hover{
+    background-color: var(--color-bg-navbar);
+
+}
+
+.highlights__name-category{
+    display: block;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--color-principal);
+}
+
+.highlights__title{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.highlights__link{
+    color: var(--color-titles);
+    transition: all 300ms;
+}
+
+.highlights__title:hover > .highlights__link{
+    color: var(--color-secondary);
+}
+
+.highlights__meta{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.highlights__author{
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+}
+
+.highlights__date{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: var(--color-text-marquee);
+}
+
+.highlights__description{
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--color-titles);
+}
+
+.highlights__footer-post,
+.footer-post__container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.footer-post__container{
+    gap: 1rem;
+}
+
+.footer-post__views,
+.footer-post__comments{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--color-text-marquee);
+}
+
+.footer-post__views > .fa-solid,
+.footer-post__comments > .fa-solid{
+    margin-right: 0.2rem;
+    font-size: 1.2rem;
+}
+
+.footer-post__comments > a{
+    display: inline;
+}
+
+.footer-post__read-more{
+    color: var(--color-text-marquee);
+    border: 1px solid var(--color-text-marquee);
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.4rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+.footer-post__read-more:hover{
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+    background-color: var(--color-bg-marquee);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*ESTILOS VIDEOS*/
 .layout__videos{
