@@ -1253,3 +1253,35 @@ color: var(--color-principal);
 .social__item--yellow{
     background-color: var(--color-linkeding);
 }
+
+/*SECCION DE ULTIMOS TWEETS*/
+.aside__tweets{
+    font-size: 1.3rem;
+    padding: 1.2rem;
+    margin-bottom: 3rem;
+    background-color: var(--color-twitterX);
+    color: var(--color-principal);
+}
+
+.tweets__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.tweets__header .fa-brands{
+    margin-right: 1rem;
+}
+
+.tweets__title{
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.tweets__content{
+    margin-bottom: 3rem;
+}
