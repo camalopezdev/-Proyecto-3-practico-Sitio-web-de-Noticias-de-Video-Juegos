@@ -524,7 +524,8 @@ color: var(--color-principal);
     background-color: var(--color-secondary);
 }
 
-.highlights__posts{
+.highlights__posts,
+.posts__container{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -537,21 +538,25 @@ color: var(--color-principal);
     border-bottom: 1px solid var(--color-bg-marquee);
 }
 
-.highlights__image{
+.highlights__image,
+.post__container-image{
     position: relative;
     overflow: hidden;
 }
 
-.highlights__img{
+.highlights__img,
+.post__img{
     transition: all 300ms ease;
 }
 
-.highlights__img:hover{
+.highlights__img:hover,
+.post__img:hover{
     transform: scale(1.1);
 }
 
-.highlights__,
-.game__container-category{
+.highlights__category,
+.game__container-category,
+.post__container-category{
     position: absolute;
     left: 0;
     bottom: 1rem;
@@ -562,13 +567,15 @@ color: var(--color-principal);
 }
 
 .highlights__category:hover,
-.game__container-category:hover{
+.game__container-category:hover,
+.post__container-category:hover{
     background-color: var(--color-bg-navbar);
 
 }
 
 .highlights__name-category,
-.game__category{
+.game__category,
+.post__category{
     display: block;
     font-weight: 400;
     font-size: 1.1rem;
@@ -576,23 +583,27 @@ color: var(--color-principal);
     color: var(--color-principal);
 }
 
-.highlights__title{
+.highlights__title,
+.post__title{
     font-size: 1.9rem;
     text-transform: uppercase;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.highlights__link{
+.highlights__link,
+.post__link{
     color: var(--color-titles);
     transition: all 300ms;
 }
 
-.highlights__title:hover > .highlights__link{
+.highlights__title:hover > .highlights__link,
+.post__title:hover > .post__link{
     color: var(--color-secondary);
 }
 
-.highlights__meta{
+.highlights__meta,
+.post__meta{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -604,7 +615,8 @@ color: var(--color-principal);
 .main-video__author,
 .video__author,
 .main-post__container-author,
-.news__author{
+.news__author,
+.post__author{
     font-weight: 500;
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -615,7 +627,8 @@ color: var(--color-principal);
 .main-video__date,
 .video__date,
 .main-post__date,
-.news__data{
+.news__data,
+.post__date{
     font-weight: 400;
     text-transform: uppercase;
     font-size: 1.1rem;
@@ -623,7 +636,8 @@ color: var(--color-principal);
     color: var(--color-text-marquee);
 }
 
-.highlights__description{
+.highlights__description,
+.post__description{
     font-weight: 500;
     font-size: 1.3rem;
     margin-bottom: 1rem;
@@ -632,14 +646,16 @@ color: var(--color-principal);
 
 .highlights__footer-post,
 .footer-post__container,
-.footer-info__container{
+.footer-info__container,
+.post__footer-post{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
 
 .footer-post__container,
-.footer-info__container{
+.footer-info__container,
+.footer-post__container{
     gap: 1rem;
 }
 
@@ -670,7 +686,8 @@ color: var(--color-principal);
 }
 
 .footer-post__read-more,
-.main-post__read-more{
+.main-post__read-more,
+.post__read-more{
     color: var(--color-text-marquee);
     border: 1px solid var(--color-text-marquee);
     font-weight: 500;
@@ -682,7 +699,8 @@ color: var(--color-principal);
 }
 
 .footer-post__read-more:hover,
-.main-post__read-more:hover{
+.main-post__read-more:hover,
+.post__read-more:hover{
     border: 1px solid var(--color-secondary);
     color: var(--color-secondary);
     background-color: var(--color-bg-marquee);
@@ -1081,10 +1099,34 @@ color: var(--color-principal);
     text-shadow: 0 0 5px black;
 }
 
+/*ESTILOS DE LA SECCION DE ULTIMOS ARTICULOS*/
+.main__post{
+    width: 100%;
+    margin-bottom: 3rem;
+}
 
+.posts__list-header{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
 
+.list-header--small{
+    font-weight: 400;
+    color: var(--color-principal);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    white-space: no-wrap;
+}
 
+.posts__container{
+    flex-wrap: wrap;
+}
 
+.posts__post{
+    flex-basis: calc(50% - 2rem);
+}
 
 
 
