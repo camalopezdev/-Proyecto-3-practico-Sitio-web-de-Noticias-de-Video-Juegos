@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- <link rel="stylesheet" href="./assets/css/scroll.css" /> -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <!--<link rel="stylesheet" href="./assets/css/responsive.css" />-->
-    <!--<link rel="stylesheet" href="./assets/css/navbarResponsive.css" />-->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/navbarResponsive.css" />
     <!--<link rel="stylesheet" href="./assets/css/modoOscuro.css" />-->
     <!--script JS
     <script src="./assets/js/menuMobile.js" defer></script>
@@ -46,6 +46,80 @@
       <!--NAVEGACION-->
       <section class="layout__nav">
         <nav class="nav__navbar">
+          <!--BOTON MENU RESPONSIVE-->
+          <div class="navbar__mobile-btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <!--NAVEGACION MENU MOVIL-->
+          <ul class="navbar__mobile-list">
+            <!--ELEMENTO 1 CON SUBMENU-->
+            <li class="mobile-list__item">
+              <div class="mobile-list__container">
+                <a class="mobile-list__link" href="#">NOTICIAS</a>
+
+                <div class="mobile-list__icon" id="icon1">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+
+              <ul class="mobile-list__msubmenu" id="submenu1">
+                <li class="msubmenu__item">
+                  <a class="msubmenu__link" href="#">Videojuegos</a>
+                </li>
+
+                <li class="msubmenu__item">
+                  <a class="msubmenu__link" href="#">Cine</a>
+                </li>
+
+                <li class="msubmenu__item">
+                  <a class="msubmenu__link" href="#">Tecnologias</a>
+                </li>
+              </ul>
+            </li>
+
+            <!--ELEMENTO 2-->
+            <li class="mobile-list__item">
+              <a class="mobile-list__link" href="#"> ANALISIS </a>
+            </li>
+
+            <!--ELEMENTO 3-->
+            <li class="mobile-list__item">
+              <a class="mobile-list__link" href="#"> JUEGOS </a>
+            </li>
+
+            <!--ELEMENTO 4 CON SUBMENU-->
+            <li class="mobile-list__item">
+              <div class="mobile-list__container">
+                <a class="mobile-list__link" href="#">CATEGORIAS</a>
+
+                <div class="mobile-list__icon" id="icon1">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+
+              <ul class="mobile-list__msubmenu" id="submenu1">
+                <li class="msubmenu__item">
+                  <a class="msubmenu__link" href="#">ACCION</a>
+                </li>
+
+                <li class="msubmenu__item">
+                  <a class="msubmenu__link" href="#">LUCHA</a>
+                </li>
+
+                <li class="msubmenu__item">
+                  <a class="msubmenu__link" href="#">SANDBOX</a>
+                </li>
+              </ul>
+            </li>
+
+            <!--ELEMENTO 3-->
+            <li class="mobile-list__item">
+              <a class="mobile-list__link" href="#"> RANKING </a>
+            </li>
+          </ul>
+
+          <!--NAVEGACION MENU ESCRITORIO-->
           <ul class="navbar__list">
             <li class="navbar__item">
               <a href="#" class="navbar__link"> NOTICIAS </a>

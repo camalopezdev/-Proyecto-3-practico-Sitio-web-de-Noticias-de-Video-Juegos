@@ -123,7 +123,7 @@ color: var(--color-principal);
 .search__input{
     width: 0rem;
     height: 5rem;
-    padding: 0;
+    padding: 0rem;
     font-size: 1.6rem;
     background-color: var(--color-secondary);
     color: var(--color-principal);

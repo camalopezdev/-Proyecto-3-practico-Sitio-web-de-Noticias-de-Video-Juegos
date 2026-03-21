@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       input_search.classList.remove("visible");
     } else {
       input_search.style.width = "20rem";
-      input_search.style.padding = "0.5rem 0rem 0.5rem 0.5rem";
+      input_search.style.padding = "1rem 0rem 1rem 1.5rem";
       input_search.classList.add("visible");
     }
   });
