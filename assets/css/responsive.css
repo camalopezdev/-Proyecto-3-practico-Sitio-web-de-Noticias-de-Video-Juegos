@@ -1,6 +1,37 @@
 
 
 @media (max-width: 1024px){
+
+    /*LAYOUT*/
+    .layout{
+        width: 70%;
+        min-width: 74rem;
+        margin: 0 auto;
+        grid-template-areas: 
+        "header header"
+        "navbar navbar"
+        "marquee marquee"
+        "slider slider"
+        "high high"
+        "videos videos"
+        "carousel carousel"
+        "main main"
+        "aside aside"
+        ;
+    }
+
+    .layout__main{
+        margin-right: 0rem;
+    }
+
+    /*CABECERA*/
+    .layout__header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /*MENU ESCRITORIO*/
     .navbar__list{
         display: none;
     }
@@ -13,4 +44,256 @@
         display: none;
     }
 
+    /*SLIDER*/
+    .layout__slider{
+    grid-template-areas:    "slider1 slider3 slider3 slider3"
+                            "slider2 slider3 slider3 slider3"
+                            "slider4 slider4 slider5 slider5";
+    }
+
+    .slider__container--slider2{
+        width: 100%;
+        height: 16.8rem;
+    }
+
+    
+    .slider__container--slider3{
+        width: 100%;
+        height: 33.8rem;
+    }
+
+    .slider__container--slider5{
+        width: 100%;
+        height: 23.5rem;
+    }
+
+    /*MEJORES MOMENTOS*/
+    .highlights__posts{
+        flex-wrap: wrap;
+    }
+
+    .highlights__post{
+        width: calc(50% - 1.5rem);
+    }
+
+    /*VIDEOS*/
+    .videos__container{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .main-video__yt-video {
+    width: 80%;
+    height: 30rem;
+    margin: auto;
+    }
+
+    .main-video__detail{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .videos__list{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .videos__video{
+        width: calc(50% - 1rem);
+    }
+
+    /*CARRUSEL*/
+    .carousel-games__item{
+        width: 100%;
+    }
+
+    .carousel-games__item--hidden{
+        display: none;
+    }
+
+    /*BARRA LATERAL ASIDE*/
+    .layout__aside{
+        margin-bottom: 3rem;
+    }
+
+    /*FOOTER - PIE DE PAGINA*/
+    .footer__container{
+        width: 70%;
+        min-width: 70rem;
+        flex-direction: column;
+    }
+
+    .footer__left-container,
+    .footer__center-container,
+    .footer__right-container{
+        width: 100%;
+    }
+
+    .footer__fslider{
+        width: auto;
+        height: auto;
+    }
+
+    .footter__text{
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 775px){
+
+    /*LAYOUT*/
+    .layout{
+        width: 57%;
+        min-width: 57rem;
+        margin: 0 auto;
+    }
+
+    /*SLIDER*/
+    .slider__container--slider2{
+        width: 100%;
+        height: 11.8rem;
+    }
+
+    
+    .slider__container--slider3{
+        width: 100%;
+        height: 24.8rem;
+    }
+
+    .slider__container--slider5{
+        width: 100%;
+        height: 19.25rem;
+    }
+
+    /*FOOTER - PIE DE PAGINA*/
+    .footer__container{
+        width: 52%;
+        min-width: 52rem;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 592px){
+    /*LAYOUT*/
+    .layout{
+        width: 35%;
+        min-width: 35rem;
+        margin: 0 auto;
+    }
+
+    /*SLIDER*/
+    .layout__slider{
+    grid-template-areas:    "slider1 slider1 slider1 slider1"
+                            "slider2 slider2 slider2 slider2"
+                            "slider3 slider3 slider3 slider3"
+                            "slider4 slider4 slider4 slider4"
+        ;
+        column-gap: 0;
+        grid-template-columns: 100%;
+    }
+
+    .slider__container--slider2{
+        width: 100%;
+        height: auto;
+    }
+
+    
+    .slider__container--slider3{
+        width: 100%;
+        height: auto;
+    }
+
+    .slider__container--slider5{
+        width: 100%;
+        height: auto;
+    }
+
+    /*MEJORES MOMENTOS*/
+    .highlights__posts{
+        display: block;
+
+    }
+
+    .highlights__post{
+        width: 100%;
+    }
+
+    /*VIDEOS*/
+    .main-video__yt-video {
+    width: 100%;
+    height: 21rem;
+    }
+
+    .videos__list{
+        flex-direction: column;
+    }
+
+    .videos__video{
+        width: 100%;
+    }
+
+    /*CARRUSEL*/
+    .carousel-games__item--hidden-small{
+        display: none;
+    }
+
+    /*NOTICIAS*/
+    .news__main-post{
+        flex-direction: column;
+    }
+    .news__list{
+        flex-direction: column;
+    }
+
+    /*JUEGOS*/
+    .games__container{
+        flex-direction: column;
+    }
+
+    .games__game{
+        width: 100%;
+    }
+
+    /*ULTIMOS ARTICULOS*/
+    .posts__container{
+        flex-direction: column;
+    }
+
+    .posts__post{
+        flex-basis: 100%;
+    }
+
+    .post__img{
+        width: 100%;
+    }
+
+    /*FOOTER -PIE DE PAGINA*/
+    .footer__container{
+        width: 30%;
+        min-width: 30rem;
+    }
+
+    .footter__text{
+        width: 100%;
+    }
+}
+
+@media (max-width: 350px){
+    /*LAYOUT*/
+    .layout{
+        width: 100%;
+        min-width: auto;
+        margin: 0 auto;
+    }
+
+    /*FOOTER -PIE DE PAGINA*/
+    .footer__container{
+        width: 100%;
+        min-width: auto;
+        margin: 0 auto;
+    }
 }
