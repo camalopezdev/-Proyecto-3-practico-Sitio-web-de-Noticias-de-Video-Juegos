@@ -8,7 +8,7 @@
 
 /*MENU MOVIL*/
     .navbar__mobile-btn{
-        display: flex;
+        display: none;
     }
     .navbar__mobile-list{
         display: none;
