@@ -1,0 +1,16 @@
+
+
+@media (max-width: 1024px){
+    .navbar__list{
+        display: none;
+    }
+
+    /*MENU MOVIL*/
+    .navbar__mobile-btn{
+        display: flex;
+    }
+    .navbar__mobile-list{
+        display: none;
+    }
+
+}
