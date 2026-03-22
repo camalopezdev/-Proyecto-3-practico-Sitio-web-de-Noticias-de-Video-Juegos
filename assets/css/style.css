@@ -1667,6 +1667,8 @@ color: var(--color-principal);
 }
 
 .footter__text{
+    display: flex;
+    justify-content: center;
     width: 60%;
     margin: 0 auto;
     font-size: 1.2rem;

@@ -333,17 +333,21 @@
 
 @media (max-width: 480px){
 
-    /*MEJORES MOMENTOS*/
-    .highlights__subheader > .subheader__title{
-        padding-right: 2.8rem;
-    }
-
-    /*VIDEOS*/
-    .videos__subheader > .subheader__title{
-        padding-right: 4.2rem;
+    /*LAYOUT*/
+    .layout{
+        width: 90%;
+        min-width: auto;
+        margin: 0 auto;
     }
 
     /*FOOTER -PIE DE PAGINA*/
+
+    .footer__container{
+        width: 90%;
+        min-width: auto;
+        margin: 0 auto;
+    }
+    
     .footter__text{
         max-width: 100%;
         overflow-wrap: break-word; /* o word-wrap: break-word; */
@@ -353,19 +357,32 @@
 
 @media (max-width: 430px){
 
+    /*LAYOUT*/
+    .layout{
+        width: 90%;
+        min-width: auto;
+        margin: 0 auto;
+    }
+
     /*MEJORES MOMENTOS*/
     .highlights__subheader > .subheader__title{
         font-size: 1.25rem;
-        padding-right: 4rem;
+        padding-right: 7.5rem;
     }
 
     /*VIDEOS*/
     .videos__subheader > .subheader__title{
         font-size: 1.25rem;
-        padding-right: 5.3rem;
+        padding-right: 8.8rem;
     }
 
     /*FOOTER -PIE DE PAGINA*/
+    .footer__container{
+        width: 90%;
+        min-width: auto;
+        margin: 0 auto;
+    }
+
     .footter__text{
         max-width: 100%;
         overflow-wrap: break-word; /* o word-wrap: break-word; */
@@ -375,19 +392,32 @@
 
 @media (max-width: 372px){
 
+    /*LAYOUT*/
+    .layout{
+        width: 90%;
+        min-width: auto;
+        margin: 0 auto;
+    }
+
     /*MEJORES MOMENTOS*/
     .highlights__subheader > .subheader__title{
         font-size: 1.25rem;
-        padding-right: 4rem;
+        padding-right: 2.4rem;
     }
 
     /*VIDEOS*/
     .videos__subheader > .subheader__title{
         font-size: 1.25rem;
-        padding-right: 5.3rem;
+        padding-right: 3.7rem;
     }
 
     /*FOOTER -PIE DE PAGINA*/
+    .footer__container{
+        width: 90%;
+        min-width: auto;
+        margin: 0 auto;
+    }
+
     .footter__text{
         max-width: 100%;
         overflow-wrap: break-word; /* o word-wrap: break-word; */
@@ -428,6 +458,12 @@
     .highlights__subheader > .subheader__title{
         font-size: 1.25rem;
         padding-right: 0.5rem;
+    }
+
+    /*VIDEOS*/
+    .videos__subheader > .subheader__title{
+        font-size: 1.25rem;
+        padding-right: 1.7rem;
     }
 
     /*FOOTER -PIE DE PAGINA*/
